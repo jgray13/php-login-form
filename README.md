@@ -1,5 +1,7 @@
 # php-login-form
 
-A login page which validates submitted form fields.
+An HTML form with inputs for username and password, and PHP validation.
 
-On submission of the form, the login-handler page processes the form data. The inputs are validated with PHP. If the username or password don't contain letters or numbers, an error message is displayed with a link back to the Login page. If the the username and password are valid, redirect to a Welcome page.
+On submission of the form, the inputs are validated with PHP. An error message is displayed if the inputs are empty or invalid. If the the username and password are valid, redirect to a Welcome page. 
+
+A session is started on successful login. The Welcome page contains a link to the Logout page, where the session is destroyed.
