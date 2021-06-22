@@ -2,19 +2,19 @@ html {
 	position: relative;
 	min-height: 100vh;
 	width: 100%;
-		background-color: #f8f8ff;
+	background-color: #f8f8ff;
 }
 body {
 	position: relative;
 	min-height: 100%;
 	margin: 0;
 	font-family: Verdana, Ariel;
-	font-size: 18px;
+	font-size: 16px;
 }
 main {
 	position: relative;
 	min-height: 100vh;
-    margin: 4em 0 0 0;
+    margin: 3em 0 0 0;
 	text-align: center;
 }
 form {
@@ -25,13 +25,16 @@ form {
 	text-align: left;
 	margin: 1em 0 0 0;
 }
+fieldset {
+	padding: 1em 0.25em;
+}
 input {
-	margin-bottom: 1.25em;
 	border: solid black;
 	border-width: 1px 2px 2px 2px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#999), to(#fff), color-stop(0.1, #fff));
 	padding: 5px 2px;
 	font-size: 16px;
+	float: right;
 }
 .submit-button {
 	margin: 0 auto;
@@ -42,9 +45,26 @@ input {
 	text-shadow: 0 -1px 0 #000;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999), color-stop(0.2, #999));
 	cursor: pointer;
-	text-align: center;
 	display: block;
+	float: none;
 }
-input[type=submit] {
-	text-align: center;
+.error-message {
+	height: 22px;
+	font-size: 14px;
+	color: red;
+}
+@media only screen and (min-width: 360px) {
+	fieldset {
+		padding: 1em;
+	}
+}
+@media only screen and (min-width: 600px) {
+	fieldset {
+		padding: 2em;
+	}
+}
+@media only screen and (min-width: 768px) {
+	fieldset {
+		padding: 2em 3em;
+	}
 }
