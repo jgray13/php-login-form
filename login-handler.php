@@ -1,5 +1,6 @@
 <?php
-include('includes/header.html');
+$page_title = 'Login';
+include 'includes/header.html';
 function error($entry) {
 	echo "Invalid $entry<br> Please <a href='login-form.php'>Log In</a>";
 	exit();
@@ -18,4 +19,4 @@ if (isset($_POST['username'])) {
 		}
 	}
 }
-include('includes/footer.html');
+include 'includes/footer.html';

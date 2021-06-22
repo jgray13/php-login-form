@@ -1,5 +1,6 @@
 <?php
-include('includes/header.html');
+$page_title = 'Login';
+include 'includes/header.html';
 ?>
 		    <form action="login-handler.php" method="POST">
 			<p>
@@ -13,5 +14,5 @@ include('includes/header.html');
 		        <input type="submit" name="submit" value="Submit" class="submit-button">
 		    </div>
 <?php
-include('includes/footer.html');
+include 'includes/footer.html';
 ?>
